@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -21,7 +18,13 @@ public class ObjectsPensionFonds {
 
 
             return bufferedReader.lines()
-                    .map(PensionFund::new)
+                    .map(line-> {
+                        try {
+                            return new PensionFund(line);
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    })
                     .toList();
 
 

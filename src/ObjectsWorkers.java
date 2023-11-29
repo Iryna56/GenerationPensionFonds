@@ -10,9 +10,7 @@ public class ObjectsWorkers {
 
 
 
-
-
-    public List<Worker> generate() throws FileNotFoundException {
+    public static List<Worker> generate() throws FileNotFoundException {
         File human = new File("src/People.txt");
 
         FileReader fileReader = new FileReader(human);

@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="529e3cfd-4bd7-4339-b53c-a0676e34c06c" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HumanGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HumanGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectsPensionFonds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectsPensionFonds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectsWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectsWorkers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PensionFond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PensionFund.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PensionFund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PensionFund.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a88fc1ce-77e2-4e21-9d07-f7cec5a56f59" />
+        <option name="url" value="https://github.com/Iryna56/GenerationPensionFonds.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/38099/IdeaProjects/Stream"
+    "last_opened_file_path": "C:/Users/38099/IdeaProjects/GenerationPensionFonds"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -124,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701253622694</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add">
+      <created>1701277819982</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701277819982</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

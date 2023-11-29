@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.*;
@@ -26,10 +23,26 @@ public class PensionFund {
         this.workDays = new HashMap<>();
     }
 
-    public PensionFund(String s) {
+    public PensionFund(String s) throws IOException {
         String[] array = s.split(" ");
         this.setName(array[0]);
         this.setState(Boolean.parseBoolean(array[1]));
+        this.persons = addWorkersToFund();
+
+    }
+
+    public static List<Worker> addWorkersToFund() throws IOException {
+        Random random = new Random();
+        List<Worker> workers = ObjectsWorkers.generate();
+        List<Worker> members = new ArrayList<>();
+        int quantityOfMembers = random.nextInt(500, 6000);
+        for (int i = 0; i < quantityOfMembers; i++) {
+            Worker worker = workers.get(random.nextInt(workers.size()));
+            if (!members.contains(worker)) {
+                members.add(worker);
+            }
+        }
+        return members;
     }
 
 
