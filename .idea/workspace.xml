@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="529e3cfd-4bd7-4339-b53c-a0676e34c06c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GenerationPensionFonds.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbleToCalculatePension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CalculatorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Fonds.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FondsGenerated.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HumanGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Names.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ObjectsPensionFonds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ObjectsWorkers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PensionFond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PensionFondGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pensioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/People.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Profession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task.txt" afterDir="false" />
+    <list default="true" id="529e3cfd-4bd7-4339-b53c-a0676e34c06c" name="Changes" comment="gf">
+      <change beforePath="$PROJECT_DIR$/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +88,18 @@
       <option name="presentableId" value="Default" />
       <updated>1701155687180</updated>
     </task>
+    <task id="LOCAL-00001" summary="gf">
+      <created>1701253324865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701253324865</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gf" />
+    <option name="LAST_COMMIT_MESSAGE" value="gf" />
   </component>
 </project>
