@@ -23,7 +23,7 @@ public class Worker extends Person implements AbleToCalculatePension {
     }
 
     public Worker(String s) {
-        super("",0);
+
         String[] array =  s.split(" ");
         this.setName(array[0]);
         this.setGender(Gender.valueOf(array[1]));
