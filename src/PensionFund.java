@@ -1,33 +1,39 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
-public class PensionFond {
+public class PensionFund {
     private String name;
 
     private boolean isState;
 
-
+    private String dateOfCreation;
 
     private List<Worker> persons;
 
     private Map<DayOfWeek, Boolean> workDays;
 
-    public PensionFond(String name, boolean isState, List<Worker> persons) {
+
+    public PensionFund(String name, boolean isState,String dateOfCreation, List<Worker> persons) {
         this.name = name;
         this.isState = isState;
-
+        this.dateOfCreation = dateOfCreation;
         this.persons = persons;
         this.workDays = new HashMap<>();
     }
 
-    public PensionFond(String name, boolean isState) {
-        this.name = name;
-        this.isState = isState;
+    public PensionFund(String s) {
+        String[] array = s.split(" ");
+        this.setName(array[0]);
+        this.setState(Boolean.parseBoolean(array[1]));
     }
+
+
+
 
     public Map<DayOfWeek, Boolean> getWorkDays() {
         return workDays;
@@ -37,13 +43,12 @@ public class PensionFond {
         this.workDays = workDays;
     }
 
-    public List<Worker> getPersons() {
-        return persons;
-    }
+
 
     public void setPersons(List<Worker> persons) {
         this.persons = persons;
     }
+
 
     public String getName() {
         return name;
@@ -61,20 +66,22 @@ public class PensionFond {
         isState = state;
     }
 
-
+    public String getDateOfCreation() {
+        return dateOfCreation;
+    }
 
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PensionFond that = (PensionFond) o;
-        return isState == that.isState && Objects.equals(name, that.name) && Objects.equals(persons, that.persons);
+        PensionFund that = (PensionFund) o;
+        return isState == that.isState && Objects.equals(name, that.name) && Objects.equals(dateOfCreation, that.dateOfCreation) && Objects.equals(persons, that.persons);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, isState, persons);
+        return Objects.hash(name, isState, dateOfCreation, persons);
     }
 
     @Override
@@ -82,7 +89,6 @@ public class PensionFond {
         return "PensionFund{" +
                 "name='" + name + '\'' +
                 ", isState=" + isState +
-                ", dateOfCreation='"  +
                 ", persons=" + persons +
                 '}';
     }
@@ -94,8 +100,7 @@ public class PensionFond {
 
         if (isState) {
             System.out.println("В фонд вложились человек: " + count / 1000 + " тыс.");
-        }
-        else {
+        } else {
             System.out.println("В фонд вложились человек: " + count);
         }
     }
@@ -103,8 +108,7 @@ public class PensionFond {
     public double calculatePensionFor(AbleToCalculatePension object) {
         if (isState && isWorkDayToday()) {
             return object.calculatePension();
-        }
-        else {
+        } else {
             return 0.0;
         }
     }
@@ -135,4 +139,8 @@ public class PensionFond {
         return sum / persons.size();
     }
 
+    public PensionFund(String name, boolean isState) {
+        this.name = name;
+        this.isState = isState;
+    }
 }

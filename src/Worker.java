@@ -13,38 +13,32 @@ public class Worker extends Person implements AbleToCalculatePension {
 
     private Set<Profession> proffessions;
 
-
-
-
-    public Worker(Gender gender, String name, int minSalary, int maxSalary) {
-        super(name, gender);
-        this.minSalary = minSalary;
-        this.maxSalary = maxSalary;
+    public Worker(String name, int age, double weight, int height) {
+        super(name, age, weight, height);
     }
 
-    public Worker(String s) {
-
-        String[] array =  s.split(" ");
-        this.setName(array[0]);
-        this.setGender(Gender.valueOf(array[1]));
-        this.setMinSalary(Integer.parseInt(array[2]));
-        this.setMaxSalary(Integer.parseInt(array[3]));
+    public Worker(String name, double weight, int height) {
+        super(name, 0, weight, height);
+    }
 
 
-
-
+    public Worker() {
+        super(null, 0, 0, 0);
+    }
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "name=" + getName() +
+                ", minSalary=" + minSalary +
+                ", maxSalary=" + maxSalary +
+                ", gender=" + getGender() +
+                '}';
     }
 
 
     @Override
     public void die() {
         System.out.println("Этот человек не дожил до пенсии");
-    }
-
-    public Worker(String name, Gender gender, int minSalary, int maxSalary) {
-        super(name, gender);
-        this.minSalary = minSalary;
-        this.maxSalary = maxSalary;
     }
 
     @Override
@@ -64,14 +58,16 @@ public class Worker extends Person implements AbleToCalculatePension {
     public int hashCode() {
         return Objects.hash(minSalary, maxSalary);
     }
+    public Worker(String s) {
+        String[] array = s.split(" ");
+        this.setName(array[0]);
+        this.setGender(Gender.valueOf(array[1]));
+        this.setMinSalary(Integer.parseInt(array[2]));
+        this.setMaxSalary(Integer.parseInt(array[3]));
 
-    @Override
-    public String toString() {
-        return "Worker{" +
-                "minSalary=" + minSalary +
-                ", maxSalary=" + maxSalary +
-                '}';
+
     }
+
 
     public int getMinSalary() {
         return minSalary;
@@ -96,6 +92,9 @@ public class Worker extends Person implements AbleToCalculatePension {
     public void setProffessions(Set<Profession> proffessions) {
         this.proffessions = proffessions;
     }
+
+
+
 
     @Override
     public double calculatePension() {

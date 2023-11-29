@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="529e3cfd-4bd7-4339-b53c-a0676e34c06c" name="Changes" comment="gf">
+    <list default="true" id="529e3cfd-4bd7-4339-b53c-a0676e34c06c" name="Changes" comment="add">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HumanGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HumanGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectsPensionFonds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectsPensionFonds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectsWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectsWorkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PensionFond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PensionFund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/38099/IdeaProjects/JavInputOutput"
+    "last_opened_file_path": "C:/Users/38099/IdeaProjects/Stream"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,9 +56,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ObjectsWorkers">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HumanGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HumanGenerator" />
+      <module name="GenerationPensionFonds" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="GenerationPensionFonds" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ObjectsWorkers" />
         <item itemvalue="Application.HumanGenerator" />
         <item itemvalue="Application.PensionFondGenerator" />
@@ -95,11 +110,37 @@
       <option name="project" value="LOCAL" />
       <updated>1701253324865</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gf">
+      <created>1701253532700</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701253532700</updated>
+    </task>
+    <task id="LOCAL-00003" summary="gf">
+      <created>1701253622694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701253622694</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gf" />
-    <option name="LAST_COMMIT_MESSAGE" value="gf" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
 </project>

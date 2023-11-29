@@ -15,11 +15,6 @@ public abstract class Person {
 
     private Person dad;
 
-
-    public Person() {
-
-    }
-
     public Person(String name, int age, double weight, int height) {
         this.name = name;
         this.age = age;
@@ -27,12 +22,9 @@ public abstract class Person {
         this.height = height;
     }
 
-    public Person(String name, Gender gender) {
-        this.name = name;
-        this.gender = gender;
+    public Person() {
+
     }
-
-
 
     public void printInfo() {
         System.out.println("Имя человека " + name);
