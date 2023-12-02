@@ -9,8 +9,10 @@ public class Main {
             List<Worker> list = objectsWorkers.generate();
 
             ObjectsPensionFonds objectsPensionFonds = new ObjectsPensionFonds();
-            List<PensionFund> list1 = objectsPensionFonds.create();
+            List<PensionFund> listPensionFonds = objectsPensionFonds.create();
 
-            System.out.println(list1);
+
+
+
         }
 }

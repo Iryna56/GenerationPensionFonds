@@ -15,7 +15,7 @@ public class PensionFund {
     private Map<DayOfWeek, Boolean> workDays;
 
 
-    public PensionFund(String name, boolean isState,String dateOfCreation, List<Worker> persons) {
+    public PensionFund(String name, boolean isState,String dateOfCreation, List<Worker> persons, Map<DayOfWeek, Boolean> workDays) {
         this.name = name;
         this.isState = isState;
         this.dateOfCreation = dateOfCreation;
@@ -102,7 +102,7 @@ public class PensionFund {
         return "PensionFund{" +
                 "name='" + name + '\'' +
                 ", isState=" + isState +
-                ", persons=" + persons +
+                ", persons=" + persons.size() +
                 '}';
     }
 
